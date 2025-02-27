@@ -1,0 +1,44 @@
+1. JDK, JRE và JVM có vai trò gì trong hệ sinh thái Java? Phân biệt và nêu mối quan hệ giữa chúng:
+JVM (Java Virtual Machine):
+JVM là máy ảo Java, chịu trách nhiệm thực thi các bytecode của Java. Nó cung cấp môi trường chạy độc lập với nền tảng, giúp hiện thực hóa khẩu hiệu "Write once, run anywhere".
+JRE (Java Runtime Environment):
+JRE cung cấp môi trường để chạy các ứng dụng Java. Nó bao gồm JVM và các thư viện Java tiêu chuẩn.
+JDK (Java Development Kit):
+JDK là bộ công cụ dành cho các nhà phát triển Java, chứa tất cả các thành phần của JRE và bổ sung thêm các công cụ phát triển như trình biên dịch (javac), trình gỡ lỗi (jdb), và các công cụ khác.
+Mối quan hệ:
+JDK = JRE + Công cụ phát triển
+JRE = JVM + Thư viện Java tiêu chuẩn
+2. Giải thích khái niệm "Write once, run anywhere" trong Java:
+Khái niệm:
+"Write once, run anywhere" (WORA) nghĩa là một chương trình Java chỉ cần viết và biên dịch một lần có thể chạy trên mọi hệ điều hành có cài JVM tương thích mà không cần biên dịch lại.
+
+Cơ chế hoạt động:
+
+Biên dịch: Mã nguồn Java (.java) được biên dịch bằng trình biên dịch javac để tạo ra mã bytecode (.class).
+Thực thi: JVM trên từng hệ điều hành cụ thể sẽ chuyển đổi bytecode này thành mã máy để thực thi.
+Kết quả: Nhờ bytecode không phụ thuộc vào nền tảng và JVM cụ thể cho từng hệ điều hành, Java có thể chạy trên mọi nền tảng có JVM.
+3. Quy trình để cài đặt và chạy chương trình Java đầu tiên bằng IntelliJ IDEA như thế nào? Hãy mô tả các bước cần thực hiện để tạo và chạy một dự án Java cơ bản.
+- Cài đặt môi trường
+- Tạo dự án Java
+- Tạo tệp
+- Chạy chương trình
+- Xử lí lỗi nếu có
+-
+4. Java có những phiên bản nào? Hãy phân biệt Java SE, Java EE và Java ME về mục đích sử dụng và đối tượng hướng đến
+* Các phiên bản Java :
+- Java SE (Standard Edition):
+    + Mục đích sử dụng :Ứng dụng máy tính để bàn, ứng dụng cơ bản
+    + Đối tượng hướng đến:Lập trình viên cá nhân, dự án nhỏ
+    + Thư viện và API :Core Java, Collection, JDBC, I/O, Swing
+    + Máy ảo sử dụng :JVM (Java Virtual Machine)
+- Java EE (Enterprise Edition) → Jakarta EE:
+    + Mục đích sử dụng :Ứng dụng doanh nghiệp, web server
+    + Đối tượng hướng đến : Doanh nghiệp, hệ thông lớn
+    + Thư viện và API : Thêm JPA, EJB, Servlets, JSP, JAX-RS
+    + Máy sử dụng : JVM (chạy trên server)
+- Java ME (Micro Edition):
+    + Mục đích sử dụng; Thiết bị di động, nhúng, IoT
+    + Thư viện và API: API tối giản cho thiết bị hạn chế
+    + Đối tượng hướng đến : Các thiết bị  phần cứng nhỏ
+    + Máy ảo sử dụng : KVM (Kilo Virtual Machine)
+
